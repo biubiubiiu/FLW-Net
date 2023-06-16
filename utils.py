@@ -28,7 +28,7 @@ def parse_args():
     parser.add_argument('--seed', type=int, default=-1, help='random seed (-1 for no manual seed)')
     parser.add_argument('--pad_multiple_to', type=int, default=32)
     parser.add_argument('--cpu', action='store_true')
-    parser.add_argument('--eval_step', type=int, default=30)
+    parser.add_argument('--eval_step', type=int, default=250)
     parser.add_argument('--save_step', type=int, default=1000)
     parser.add_argument('--phase', choices=['train', 'test'], default='train')
     parser.add_argument('--ckpt', type=str, default=None, help='path to checkpoint')
